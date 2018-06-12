@@ -25,31 +25,32 @@ db pwd: sinergialabs
 3.dashboard
 
 #### user
-Field   | Type         | Null | Key | Default | Extra          |
+<pre> Field   | Type         | Null | Key | Default | Extra          |
 +---------+--------------+------+-----+---------+----------------+
 | ID      | int(11)      | NO   | PRI | NULL    | auto_increment |
 | phone   | varchar(35)  | NO   | UNI | NULL    |                |
 | email   | varchar(55)  | NO   | UNI | NULL    |                |
 | address | varchar(255) | YES  | UNI | NULL    |                |
 | name    | varchar(100) | NO   |     | NULL    |                |
-+---------+--------------+------+-----+---------+------------
++---------+--------------+------+-----+---------+----------------+
+</pre>
 
 #### login
-Field    | Type         | Null | Key | Default | Extra          |
+<pre> Field    | Type         | Null | Key | Default | Extra          |
 +----------+--------------+------+-----+---------+----------------+
 | ID       | int(11)      | NO   | PRI | NULL    | auto_increment |
 | password | varchar(255) | NO   |     | NULL    |                |
 | userid   | int(11)      | NO   | UNI | NULL    |                |
-| username | varchar(100) | YES  | UNI | NULL    |         
+| username | varchar(100) | YES  | UNI | NULL    |                |
++----------+--------------+------+-----+---------+----------------+</pre>
 
 #### dashboard
-
-Field     | Type           | Null | Key | Default | Extra          |
+<pre>Field     | Type           | Null | Key | Default | Extra          |
 +-----------+----------------+------+-----+---------+----------------+
 | ID        | int(11)        | NO   | PRI | NULL    | auto_increment |
 | userid    | int(11)        | NO   |     | NULL    |                |
 | username  | varchar(100)   | NO   |     | NULL    |                |
 | env       | varchar(100)   | YES  |     | NULL    |                |
 | name      | varchar(100)   | YES  |     | NULL    |                |
-| dashboard | varchar(10000) | YES  |     | NULL    |                
+| dashboard | varchar(10000) | YES  |     | NULL    |                </pre>      
 
